@@ -1,0 +1,106 @@
+[gd_scene format=3 uid="uid://dsxoudap8wfgb"]
+
+[ext_resource type="Script" uid="uid://c1c73ubah5x2t" path="res://scripts/main_menu.gd" id="1_m1kxf"]
+[ext_resource type="Texture2D" uid="uid://dik4p76l4isxr" path="res://assets/map3/Free Pixel Art Forest/Preview/Background.png" id="2_x2yvf"]
+[ext_resource type="FontFile" uid="uid://dh2t6adlgfpj0" path="res://assets/brackeys_assets/fonts/PixelOperator8.ttf" id="3_uhagc"]
+[ext_resource type="FontFile" uid="uid://clfgbwraji6xo" path="res://assets/brackeys_assets/fonts/PixelOperator8-Bold.ttf" id="4_btxxm"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_u8vn4"]
+texture = ExtResource("2_x2yvf")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pm2xe"]
+bg_color = Color(6.158474, 6.158474, 6.158474, 1)
+corner_radius_top_left = 17
+corner_radius_top_right = 17
+corner_radius_bottom_right = 17
+corner_radius_bottom_left = 17
+corner_detail = 16
+shadow_size = 9
+shadow_offset = Vector2(3, 3)
+
+[node name="MainMenu" type="Control" unique_id=742694915]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_m1kxf")
+
+[node name="Panel" type="Panel" parent="." unique_id=1405756853]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_u8vn4")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1539660918]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -256.0
+offset_top = -71.0
+offset_right = 258.0
+offset_bottom = 164.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 17
+
+[node name="start_btn" type="Button" parent="VBoxContainer" unique_id=218736261]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.040052935, 0.040052935, 0.040052935, 1)
+theme_override_fonts/font = ExtResource("3_uhagc")
+theme_override_font_sizes/font_size = 21
+theme_override_styles/normal = SubResource("StyleBoxFlat_pm2xe")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_pm2xe")
+theme_override_styles/hover = SubResource("StyleBoxFlat_pm2xe")
+text = "Start Game"
+
+[node name="settings_btn" type="Button" parent="VBoxContainer" unique_id=784863860]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.040052935, 0.040052935, 0.040052935, 1)
+theme_override_fonts/font = ExtResource("3_uhagc")
+theme_override_font_sizes/font_size = 21
+theme_override_styles/normal = SubResource("StyleBoxFlat_pm2xe")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_pm2xe")
+theme_override_styles/hover = SubResource("StyleBoxFlat_pm2xe")
+text = "Options"
+
+[node name="exit_btn" type="Button" parent="VBoxContainer" unique_id=161116055]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.040052935, 0.040052935, 0.040052935, 1)
+theme_override_fonts/font = ExtResource("3_uhagc")
+theme_override_font_sizes/font_size = 21
+theme_override_styles/normal = SubResource("StyleBoxFlat_pm2xe")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_pm2xe")
+theme_override_styles/hover = SubResource("StyleBoxFlat_pm2xe")
+text = "Quit Game"
+
+[node name="Label" type="Label" parent="." unique_id=46692804]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -441.5
+offset_top = 49.0
+offset_right = 441.5
+offset_bottom = 164.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("4_btxxm")
+theme_override_font_sizes/font_size = 66
+text = "DCISM SUNTUKAN"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="VBoxContainer/start_btn" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="VBoxContainer/settings_btn" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="VBoxContainer/exit_btn" to="." method="_on_exit_pressed"]
