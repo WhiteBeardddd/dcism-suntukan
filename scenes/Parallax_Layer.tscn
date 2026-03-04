@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://br7e4xyy6w4ql"]
+
+[ext_resource type="Texture2D" uid="uid://ddsn0dw6yaa7a" path="res://assets/map3/Free Pixel Art Forest/PNG/Background layers/Layer_0006_4.png" id="1_2lcyo"]
+
+[node name="Layer1" type="Parallax2D" unique_id=1587314377]
+scroll_scale = Vector2(0.1, 0)
+scroll_offset = Vector2(66, 43)
+repeat_size = Vector2(793, 0)
+repeat_times = 5
+follow_viewport = false
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=251157473]
+position = Vector2(-442, -660)
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_2lcyo")
+centered = false
