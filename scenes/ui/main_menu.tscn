@@ -101,6 +101,6 @@ text = "DCISM SUNTUKAN"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[connection signal="pressed" from="VBoxContainer/start_btn" to="." method="_on_start_pressed"]
-[connection signal="pressed" from="VBoxContainer/settings_btn" to="." method="_on_settings_pressed"]
-[connection signal="pressed" from="VBoxContainer/exit_btn" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="VBoxContainer/start_btn" to="." method="_on_start_btn_pressed"]
+[connection signal="pressed" from="VBoxContainer/settings_btn" to="." method="_on_settings_btn_pressed"]
+[connection signal="pressed" from="VBoxContainer/exit_btn" to="." method="_on_exit_btn_pressed"]

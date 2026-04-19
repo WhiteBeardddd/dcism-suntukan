@@ -1,0 +1,112 @@
+[gd_scene format=3 uid="uid://chnbg5cp4agx5"]
+
+[ext_resource type="Texture2D" uid="uid://c04v3egn85rif" path="res://assets/brackeys_assets/sprites/slime_green.png" id="1_07qmk"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_365i5"]
+atlas = ExtResource("1_07qmk")
+region = Rect2(0, 48, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3x736"]
+atlas = ExtResource("1_07qmk")
+region = Rect2(24, 48, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cugwo"]
+atlas = ExtResource("1_07qmk")
+region = Rect2(48, 48, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sye70"]
+atlas = ExtResource("1_07qmk")
+region = Rect2(72, 48, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xctrb"]
+atlas = ExtResource("1_07qmk")
+region = Rect2(0, 24, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2swhk"]
+atlas = ExtResource("1_07qmk")
+region = Rect2(24, 24, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6fbmm"]
+atlas = ExtResource("1_07qmk")
+region = Rect2(48, 24, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o3rcr"]
+atlas = ExtResource("1_07qmk")
+region = Rect2(72, 24, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pueji"]
+atlas = ExtResource("1_07qmk")
+region = Rect2(0, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_klch7"]
+atlas = ExtResource("1_07qmk")
+region = Rect2(24, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xuiwo"]
+atlas = ExtResource("1_07qmk")
+region = Rect2(48, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uqxmo"]
+atlas = ExtResource("1_07qmk")
+region = Rect2(72, 0, 24, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_e0q2m"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_365i5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3x736")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cugwo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sye70")
+}],
+"loop": false,
+"name": &"hurt",
+"speed": 7.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xctrb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2swhk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6fbmm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o3rcr")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 14.0
+}, {
+"frames": [{
+"duration": 2.0,
+"texture": SubResource("AtlasTexture_pueji")
+}, {
+"duration": 2.0,
+"texture": SubResource("AtlasTexture_klch7")
+}, {
+"duration": 2.0,
+"texture": SubResource("AtlasTexture_xuiwo")
+}, {
+"duration": 2.0,
+"texture": SubResource("AtlasTexture_uqxmo")
+}],
+"loop": false,
+"name": &"spawning",
+"speed": 10.0
+}]
+
+[node name="EnemySlime" type="Node2D" unique_id=828734449]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=38379066]
+sprite_frames = SubResource("SpriteFrames_e0q2m")
+animation = &"idle"
+autoplay = "idle"
