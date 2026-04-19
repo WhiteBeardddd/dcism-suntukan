@@ -1,0 +1,146 @@
+[gd_scene format=3 uid="uid://t6clgspwiuje"]
+
+[ext_resource type="Texture2D" uid="uid://bln8304lkvwl" path="res://assets/map3/Free Pixel Art Forest/PNG/Background layers/Layer_0011_0.png" id="1_v3h2l"]
+[ext_resource type="Texture2D" uid="uid://b5q3h4mi727bu" path="res://assets/map3/Free Pixel Art Forest/PNG/Background layers/Layer_0009_2.png" id="2_k2toe"]
+[ext_resource type="Texture2D" uid="uid://ddsn0dw6yaa7a" path="res://assets/map3/Free Pixel Art Forest/PNG/Background layers/Layer_0006_4.png" id="3_csw6o"]
+[ext_resource type="Texture2D" uid="uid://cbc4kea73g1v2" path="res://assets/map3/Free Pixel Art Forest/PNG/Background layers/Layer_0005_5.png" id="4_vh4qf"]
+[ext_resource type="Texture2D" uid="uid://d3m48yg83rn78" path="res://assets/map3/Free Pixel Art Forest/PNG/Background layers/Layer_0003_6.png" id="5_fsobl"]
+[ext_resource type="Texture2D" uid="uid://d1ym0q3a2u6f7" path="res://assets/map3/Free Pixel Art Forest/PNG/Background layers/Layer_0007_Lights.png" id="6_g8cm5"]
+[ext_resource type="Texture2D" uid="uid://g8ifn8hx2mm6" path="res://assets/map3/Free Pixel Art Forest/PNG/Background layers/Layer_0002_7.png" id="7_qpoin"]
+
+[node name="Map7" type="Node2D" unique_id=1977797955]
+
+[node name="Node2D" type="Node2D" parent="." unique_id=484724961]
+
+[node name="Background" type="Parallax2D" parent="Node2D" unique_id=1664181788]
+scroll_scale = Vector2(0, 0)
+scroll_offset = Vector2(-1790, 43)
+repeat_size = Vector2(2700, 0)
+repeat_times = 2
+follow_viewport = false
+
+[node name="Sprite2D" type="Sprite2D" parent="Node2D/Background" unique_id=2128736206]
+position = Vector2(-354, -925)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("1_v3h2l")
+centered = false
+
+[node name="Sprite2D3" type="Sprite2D" parent="Node2D/Background" unique_id=743518241]
+position = Vector2(1037, -925)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("1_v3h2l")
+centered = false
+
+[node name="TreeBg1" type="Parallax2D" parent="Node2D" unique_id=308264934]
+scroll_scale = Vector2(0, 0)
+scroll_offset = Vector2(-1790, 43)
+repeat_size = Vector2(2700, 0)
+repeat_times = 2
+follow_viewport = false
+
+[node name="Sprite2D" type="Sprite2D" parent="Node2D/TreeBg1" unique_id=121482201]
+position = Vector2(-354, -925)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("2_k2toe")
+centered = false
+
+[node name="Sprite2D2" type="Sprite2D" parent="Node2D/TreeBg1" unique_id=2069250992]
+position = Vector2(1037, -925)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("2_k2toe")
+centered = false
+
+[node name="TreeBg2" type="Parallax2D" parent="Node2D" unique_id=1278018046]
+scroll_scale = Vector2(0.05, 0)
+scroll_offset = Vector2(-1790, 43)
+repeat_size = Vector2(2700, 0)
+repeat_times = 2
+follow_viewport = false
+
+[node name="Sprite2D" type="Sprite2D" parent="Node2D/TreeBg2" unique_id=1667708560]
+position = Vector2(-354, -925)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("3_csw6o")
+centered = false
+
+[node name="Sprite2D2" type="Sprite2D" parent="Node2D/TreeBg2" unique_id=331607656]
+position = Vector2(1037, -925)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("3_csw6o")
+centered = false
+
+[node name="TreeFg1" type="Parallax2D" parent="Node2D" unique_id=2143564013]
+scroll_scale = Vector2(0.1, 0)
+scroll_offset = Vector2(-2162, 43)
+repeat_size = Vector2(2700, 0)
+repeat_times = 2
+follow_viewport = false
+
+[node name="Sprite2D" type="Sprite2D" parent="Node2D/TreeFg1" unique_id=1525982559]
+position = Vector2(-354, -925)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("4_vh4qf")
+centered = false
+
+[node name="Sprite2D2" type="Sprite2D" parent="Node2D/TreeFg1" unique_id=2095901628]
+position = Vector2(1037, -925)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("4_vh4qf")
+centered = false
+
+[node name="TreeFg2" type="Parallax2D" parent="Node2D" unique_id=529907857]
+scroll_scale = Vector2(0.25, 0)
+scroll_offset = Vector2(-1790, 43)
+repeat_size = Vector2(2700, 0)
+repeat_times = 2
+follow_viewport = false
+
+[node name="Sprite2D" type="Sprite2D" parent="Node2D/TreeFg2" unique_id=747556593]
+position = Vector2(-354, -925)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("5_fsobl")
+centered = false
+
+[node name="Sprite2D2" type="Sprite2D" parent="Node2D/TreeFg2" unique_id=1077126503]
+position = Vector2(1037, -925)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("5_fsobl")
+centered = false
+
+[node name="Light1" type="Parallax2D" parent="Node2D" unique_id=637794426]
+scroll_scale = Vector2(0.35, 0)
+scroll_offset = Vector2(-1790, 43)
+repeat_size = Vector2(1856, 0)
+repeat_times = 2
+follow_viewport = false
+
+[node name="Sprite2D" type="Sprite2D" parent="Node2D/Light1" unique_id=1734785090]
+position = Vector2(-354, -925)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("6_g8cm5")
+centered = false
+
+[node name="Sprite2D2" type="Sprite2D" parent="Node2D/Light1" unique_id=585073269]
+position = Vector2(1037, -925)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("6_g8cm5")
+centered = false
+
+[node name="Leaves" type="Parallax2D" parent="Node2D" unique_id=151289708]
+scroll_scale = Vector2(0, 0)
+scroll_offset = Vector2(-1790, 43)
+repeat_size = Vector2(2700, 0)
+repeat_times = 2
+follow_viewport = false
+
+[node name="Sprite2D" type="Sprite2D" parent="Node2D/Leaves" unique_id=920934817]
+position = Vector2(-354, -925)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("7_qpoin")
+centered = false
+
+[node name="Sprite2D2" type="Sprite2D" parent="Node2D/Leaves" unique_id=912077967]
+position = Vector2(1037, -925)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("7_qpoin")
+centered = false
