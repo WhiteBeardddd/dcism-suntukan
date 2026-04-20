@@ -849,7 +849,7 @@ animations = [{
 radius = 6.0
 height = 36.0
 
-[node name="knight" type="CharacterBody2D" unique_id=124575242]
+[node name="knight" type="CharacterBody2D" unique_id=124575242 groups=["player"]]
 script = ExtResource("1_jfp34")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=192615170]
