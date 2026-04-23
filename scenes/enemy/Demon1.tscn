@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://0xde5u5drvqf" path="res://scenes/enemy/animations/west/spritesheet.png" id="1_ivmi1"]
 [ext_resource type="Texture2D" uid="uid://cuhm3r15id1jg" path="res://scenes/enemy/animations/punching_west/spritesheet (1).png" id="3_3ae06"]
 [ext_resource type="Texture2D" uid="uid://du88refgmq071" path="res://scenes/enemy/animations/flying/spritesheet (2).png" id="4_dw28v"]
+[ext_resource type="Script" uid="uid://bigep6cow87an" path="res://scripts/entities/enemy/demon/Hurtbox.gd" id="5_rk35g"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mjg7i"]
 atlas = ExtResource("3_3ae06")
@@ -226,12 +227,30 @@ animations = [{
 "speed": 10.0
 }]
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_y7lej"]
+radius = 7.0
+height = 34.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rk35g"]
+height = 44.0
+
 [node name="CharacterBody2D" type="CharacterBody2D" unique_id=861656516]
 script = ExtResource("1_1xnnm")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2058371199]
 sprite_frames = SubResource("SpriteFrames_mvkia")
-animation = &"attack"
+animation = &"walk"
 autoplay = "idle"
+frame = 8
+frame_progress = 0.18976748
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2073435810]
+shape = SubResource("CapsuleShape2D_y7lej")
+
+[node name="Hurtbox" type="Area2D" parent="." unique_id=1936516563]
+collision_layer = 16
+collision_mask = 8
+script = ExtResource("5_rk35g")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox" unique_id=1516621358]
+shape = SubResource("CapsuleShape2D_rk35g")

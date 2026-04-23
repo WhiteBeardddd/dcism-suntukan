@@ -18,6 +18,7 @@ var combo_timer    := 0.0
 
 # --- Nodes ---
 @onready var anim: AnimatedSprite2D = $AnimatedSprite2D
+@onready var attack_controller = $AttackController
 
 func _ready() -> void:
 	anim.animation_finished.connect(_on_anim_finished)
@@ -61,6 +62,7 @@ func apply_horizontal(dir: float) -> void:
 	if dir != 0.0:
 		velocity.x = dir * speed
 		anim.flip_h = dir < 0.0
+		attack_controller.facing_right = dir > 0.0
 	else:
 		velocity.x = move_toward(velocity.x, 0.0, speed)
 
@@ -72,3 +74,6 @@ func take_hit() -> void:
 
 func die() -> void:
 	$StateMachine._on_state_finished("Death")
+
+func spawn_attack_hitbox(attack_name: String) -> void:
+	attack_controller.spawn_hitbox(attack_name)

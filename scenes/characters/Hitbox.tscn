@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://dwdbdkcfkfdwj"]
+
+[ext_resource type="Script" uid="uid://c4kh4c8kwwr0n" path="res://scripts/player/hitbox.gd" id="1_0ux8l"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0ux8l"]
+
+[node name="Hitbox" type="Area2D" unique_id=1260896598]
+collision_layer = 8
+collision_mask = 16
+script = ExtResource("1_0ux8l")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=850554000]
+shape = SubResource("RectangleShape2D_0ux8l")
+debug_color = Color(0.95823556, 0.15606967, 0.34837657, 0.41960785)

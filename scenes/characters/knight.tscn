@@ -38,6 +38,8 @@
 [ext_resource type="Script" uid="uid://dnwdj5n2i0vam" path="res://scripts/StateMachine/states/CrouchWalk.gd" id="36_ofep1"]
 [ext_resource type="Script" uid="uid://b3hptsapuydyr" path="res://scripts/StateMachine/states/Dash.gd" id="37_vfh46"]
 [ext_resource type="Script" uid="uid://ds18nxkrj4pfh" path="res://scripts/StateMachine/states/Death.gd" id="38_1t857"]
+[ext_resource type="Script" uid="uid://bguqq3symyuh2" path="res://scripts/player/attack_controller.gd" id="39_d6hf5"]
+[ext_resource type="PackedScene" uid="uid://dwdbdkcfkfdwj" path="res://scenes/characters/Hitbox.tscn" id="40_uwkbq"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_f6vmv"]
 atlas = ExtResource("1_6jeeq")
@@ -916,3 +918,7 @@ script = ExtResource("37_vfh46")
 
 [node name="Death" type="Node" parent="StateMachine" unique_id=1069374221]
 script = ExtResource("38_1t857")
+
+[node name="AttackController" type="Node2D" parent="." unique_id=1144844460]
+script = ExtResource("39_d6hf5")
+hitbox_scene = ExtResource("40_uwkbq")
