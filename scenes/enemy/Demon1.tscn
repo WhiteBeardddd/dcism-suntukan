@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dysloytv7f22o"]
 
-[ext_resource type="Script" uid="uid://btq87t375olvx" path="res://scenes/enemy/demon_1.gd" id="1_1xnnm"]
+[ext_resource type="Script" uid="uid://btq87t375olvx" path="res://scripts/entities/enemy/demon/demon_1.gd" id="1_1xnnm"]
 [ext_resource type="Texture2D" uid="uid://0xde5u5drvqf" path="res://scenes/enemy/animations/west/spritesheet.png" id="1_ivmi1"]
 [ext_resource type="Texture2D" uid="uid://cuhm3r15id1jg" path="res://scenes/enemy/animations/punching_west/spritesheet (1).png" id="3_3ae06"]
 [ext_resource type="Texture2D" uid="uid://du88refgmq071" path="res://scenes/enemy/animations/flying/spritesheet (2).png" id="4_dw28v"]

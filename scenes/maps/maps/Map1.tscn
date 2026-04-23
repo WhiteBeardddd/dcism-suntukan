@@ -1,19 +1,19 @@
 [gd_scene format=3 uid="uid://3ogsnh6pj2qa"]
 
-[ext_resource type="Texture2D" uid="uid://dio5bctlymc2d" path="res://assets/map2/Legacy-Fantasy - High Forest 2.3/Assets/Tiles.png" id="1_6p0qb"]
-[ext_resource type="Texture2D" uid="uid://ddsn0dw6yaa7a" path="res://assets/map3/Free Pixel Art Forest/PNG/Background layers/Layer_0006_4.png" id="1_tjsg2"]
-[ext_resource type="Texture2D" uid="uid://bln8304lkvwl" path="res://assets/map3/Free Pixel Art Forest/PNG/Background layers/Layer_0011_0.png" id="2_16cl4"]
-[ext_resource type="Texture2D" uid="uid://b5q3h4mi727bu" path="res://assets/map3/Free Pixel Art Forest/PNG/Background layers/Layer_0009_2.png" id="2_qjb0e"]
-[ext_resource type="Texture2D" uid="uid://d1ym0q3a2u6f7" path="res://assets/map3/Free Pixel Art Forest/PNG/Background layers/Layer_0007_Lights.png" id="2_tya1n"]
-[ext_resource type="PackedScene" uid="uid://bw2iynu5ia8jv" path="res://scenes/characters/knight.tscn" id="3_orgal"]
-[ext_resource type="Texture2D" uid="uid://cbc4kea73g1v2" path="res://assets/map3/Free Pixel Art Forest/PNG/Background layers/Layer_0005_5.png" id="3_wlres"]
-[ext_resource type="Texture2D" uid="uid://g8ifn8hx2mm6" path="res://assets/map3/Free Pixel Art Forest/PNG/Background layers/Layer_0002_7.png" id="7_asiou"]
-[ext_resource type="Texture2D" uid="uid://d3m48yg83rn78" path="res://assets/map3/Free Pixel Art Forest/PNG/Background layers/Layer_0003_6.png" id="8_lgyaf"]
-[ext_resource type="Texture2D" uid="uid://cgj3tu40htfm6" path="res://assets/Free Pixel Art Forest/Free Pixel Art Forest/Preview/Background.png" id="10_lgyaf"]
-[ext_resource type="PackedScene" uid="uid://dysloytv7f22o" path="res://scenes/enemy/Demon1.tscn" id="11_phuv4"]
+[ext_resource type="Texture2D" uid="uid://bln8304lkvwl" path="res://assets/map3/Free Pixel Art Forest/PNG/Background layers/Layer_0011_0.png" id="1_pc7x8"]
+[ext_resource type="Texture2D" uid="uid://b5q3h4mi727bu" path="res://assets/map3/Free Pixel Art Forest/PNG/Background layers/Layer_0009_2.png" id="2_wu4r1"]
+[ext_resource type="Texture2D" uid="uid://ddsn0dw6yaa7a" path="res://assets/map3/Free Pixel Art Forest/PNG/Background layers/Layer_0006_4.png" id="3_hb8g1"]
+[ext_resource type="Texture2D" uid="uid://cbc4kea73g1v2" path="res://assets/map3/Free Pixel Art Forest/PNG/Background layers/Layer_0005_5.png" id="4_efm78"]
+[ext_resource type="Texture2D" uid="uid://d3m48yg83rn78" path="res://assets/map3/Free Pixel Art Forest/PNG/Background layers/Layer_0003_6.png" id="5_xtb0b"]
+[ext_resource type="Texture2D" uid="uid://d1ym0q3a2u6f7" path="res://assets/map3/Free Pixel Art Forest/PNG/Background layers/Layer_0007_Lights.png" id="6_d4sba"]
+[ext_resource type="Texture2D" uid="uid://g8ifn8hx2mm6" path="res://assets/map3/Free Pixel Art Forest/PNG/Background layers/Layer_0002_7.png" id="7_48vxh"]
+[ext_resource type="PackedScene" uid="uid://bw2iynu5ia8jv" path="res://scenes/characters/knight.tscn" id="8_64q3p"]
+[ext_resource type="Texture2D" uid="uid://dio5bctlymc2d" path="res://assets/map2/Legacy-Fantasy - High Forest 2.3/Assets/Tiles.png" id="9_nabxy"]
+[ext_resource type="Texture2D" uid="uid://cgj3tu40htfm6" path="res://assets/Free Pixel Art Forest/Free Pixel Art Forest/Preview/Background.png" id="10_iqxaf"]
+[ext_resource type="PackedScene" uid="uid://dysloytv7f22o" path="res://scenes/enemy/Demon1.tscn" id="11_x3ym4"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6p0qb"]
-texture = ExtResource("1_6p0qb")
+texture = ExtResource("9_nabxy")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-6.180666, 3.3950138, 8, 3.3950138, 8, 8, -6.180666, 8, -6.1299477, 6.684695)
 1:0/0 = 0
@@ -552,7 +552,7 @@ texture = ExtResource("1_6p0qb")
 19:24/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_phuv4"]
-texture = ExtResource("10_lgyaf")
+texture = ExtResource("10_iqxaf")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -3473,13 +3473,13 @@ follow_viewport = false
 [node name="Sprite2D" type="Sprite2D" parent="Node2D/Background" unique_id=2076957872]
 position = Vector2(-354, -925)
 scale = Vector2(1.5, 1.5)
-texture = ExtResource("2_16cl4")
+texture = ExtResource("1_pc7x8")
 centered = false
 
 [node name="Sprite2D3" type="Sprite2D" parent="Node2D/Background" unique_id=52879755]
 position = Vector2(1037, -925)
 scale = Vector2(1.5, 1.5)
-texture = ExtResource("2_16cl4")
+texture = ExtResource("1_pc7x8")
 centered = false
 
 [node name="TreeBg1" type="Parallax2D" parent="Node2D" unique_id=423274213]
@@ -3492,13 +3492,13 @@ follow_viewport = false
 [node name="Sprite2D" type="Sprite2D" parent="Node2D/TreeBg1" unique_id=230118543]
 position = Vector2(-354, -925)
 scale = Vector2(1.5, 1.5)
-texture = ExtResource("2_qjb0e")
+texture = ExtResource("2_wu4r1")
 centered = false
 
 [node name="Sprite2D2" type="Sprite2D" parent="Node2D/TreeBg1" unique_id=19107177]
 position = Vector2(1037, -925)
 scale = Vector2(1.5, 1.5)
-texture = ExtResource("2_qjb0e")
+texture = ExtResource("2_wu4r1")
 centered = false
 
 [node name="TreeBg2" type="Parallax2D" parent="Node2D" unique_id=1729157615]
@@ -3511,13 +3511,13 @@ follow_viewport = false
 [node name="Sprite2D" type="Sprite2D" parent="Node2D/TreeBg2" unique_id=757434072]
 position = Vector2(-354, -925)
 scale = Vector2(1.5, 1.5)
-texture = ExtResource("1_tjsg2")
+texture = ExtResource("3_hb8g1")
 centered = false
 
 [node name="Sprite2D2" type="Sprite2D" parent="Node2D/TreeBg2" unique_id=115298996]
 position = Vector2(1037, -925)
 scale = Vector2(1.5, 1.5)
-texture = ExtResource("1_tjsg2")
+texture = ExtResource("3_hb8g1")
 centered = false
 
 [node name="TreeFg1" type="Parallax2D" parent="Node2D" unique_id=718302595]
@@ -3530,13 +3530,13 @@ follow_viewport = false
 [node name="Sprite2D" type="Sprite2D" parent="Node2D/TreeFg1" unique_id=288395430]
 position = Vector2(-354, -925)
 scale = Vector2(1.5, 1.5)
-texture = ExtResource("3_wlres")
+texture = ExtResource("4_efm78")
 centered = false
 
 [node name="Sprite2D2" type="Sprite2D" parent="Node2D/TreeFg1" unique_id=685103480]
 position = Vector2(1037, -925)
 scale = Vector2(1.5, 1.5)
-texture = ExtResource("3_wlres")
+texture = ExtResource("4_efm78")
 centered = false
 
 [node name="TreeFg2" type="Parallax2D" parent="Node2D" unique_id=281559751]
@@ -3549,13 +3549,13 @@ follow_viewport = false
 [node name="Sprite2D" type="Sprite2D" parent="Node2D/TreeFg2" unique_id=1494568003]
 position = Vector2(-354, -925)
 scale = Vector2(1.5, 1.5)
-texture = ExtResource("8_lgyaf")
+texture = ExtResource("5_xtb0b")
 centered = false
 
 [node name="Sprite2D2" type="Sprite2D" parent="Node2D/TreeFg2" unique_id=896805010]
 position = Vector2(1037, -925)
 scale = Vector2(1.5, 1.5)
-texture = ExtResource("8_lgyaf")
+texture = ExtResource("5_xtb0b")
 centered = false
 
 [node name="Light1" type="Parallax2D" parent="Node2D" unique_id=640113543]
@@ -3568,13 +3568,13 @@ follow_viewport = false
 [node name="Sprite2D" type="Sprite2D" parent="Node2D/Light1" unique_id=1506842139]
 position = Vector2(-354, -925)
 scale = Vector2(1.5, 1.5)
-texture = ExtResource("2_tya1n")
+texture = ExtResource("6_d4sba")
 centered = false
 
 [node name="Sprite2D2" type="Sprite2D" parent="Node2D/Light1" unique_id=289412365]
 position = Vector2(1037, -925)
 scale = Vector2(1.5, 1.5)
-texture = ExtResource("2_tya1n")
+texture = ExtResource("6_d4sba")
 centered = false
 
 [node name="Leaves" type="Parallax2D" parent="Node2D" unique_id=627282666]
@@ -3587,16 +3587,16 @@ follow_viewport = false
 [node name="Sprite2D" type="Sprite2D" parent="Node2D/Leaves" unique_id=2113483153]
 position = Vector2(-354, -925)
 scale = Vector2(1.5, 1.5)
-texture = ExtResource("7_asiou")
+texture = ExtResource("7_48vxh")
 centered = false
 
 [node name="Sprite2D2" type="Sprite2D" parent="Node2D/Leaves" unique_id=1282808553]
 position = Vector2(1037, -925)
 scale = Vector2(1.5, 1.5)
-texture = ExtResource("7_asiou")
+texture = ExtResource("7_48vxh")
 centered = false
 
-[node name="knight" parent="." unique_id=124575242 instance=ExtResource("3_orgal")]
+[node name="knight" parent="." unique_id=124575242 instance=ExtResource("8_64q3p")]
 position = Vector2(2488, 0)
 
 [node name="Camera2D" type="Camera2D" parent="knight" unique_id=1245592545]
@@ -3617,5 +3617,6 @@ layer_0/tile_data = PackedInt32Array(523986, 65536, 3, 589522, 65536, 3, 655058,
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="." unique_id=256079957]
 
-[node name="Node2D2" parent="." unique_id=1168467685 instance=ExtResource("11_phuv4")]
+[node name="Node2D2" parent="." unique_id=1168467685 instance=ExtResource("11_x3ym4")]
 position = Vector2(2749, 30)
+script = null

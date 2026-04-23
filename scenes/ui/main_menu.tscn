@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dsxoudap8wfgb"]
 
-[ext_resource type="Script" uid="uid://c1c73ubah5x2t" path="res://scripts/main_menu.gd" id="1_m1kxf"]
+[ext_resource type="Script" uid="uid://c1c73ubah5x2t" path="res://scripts/gamemanager/ui/main_menu.gd" id="1_m1kxf"]
 [ext_resource type="Texture2D" uid="uid://dik4p76l4isxr" path="res://assets/map3/Free Pixel Art Forest/Preview/Background.png" id="2_x2yvf"]
 [ext_resource type="FontFile" uid="uid://dh2t6adlgfpj0" path="res://assets/brackeys_assets/fonts/PixelOperator8.ttf" id="3_uhagc"]
 [ext_resource type="FontFile" uid="uid://clfgbwraji6xo" path="res://assets/brackeys_assets/fonts/PixelOperator8-Bold.ttf" id="4_btxxm"]
