@@ -1,0 +1,76 @@
+[gd_scene format=3 uid="uid://dtjbcad2fegpe"]
+
+[ext_resource type="Texture2D" uid="uid://bu1xroqc5rmbk" path="res://assets/gothChurch/gothicvania church/assets/atlas/atlas.png" id="1_8qfha"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hnoa0"]
+atlas = ExtResource("1_8qfha")
+region = Rect2(250, 0, 125, 108)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g2a5c"]
+atlas = ExtResource("1_8qfha")
+region = Rect2(375, 0, 125, 108)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kqela"]
+atlas = ExtResource("1_8qfha")
+region = Rect2(500, 0, 125, 108)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i74hb"]
+atlas = ExtResource("1_8qfha")
+region = Rect2(625, 0, 125, 108)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vm3ww"]
+atlas = ExtResource("1_8qfha")
+region = Rect2(750, 0, 125, 108)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n732b"]
+atlas = ExtResource("1_8qfha")
+region = Rect2(875, 0, 125, 108)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vid2s"]
+atlas = ExtResource("1_8qfha")
+region = Rect2(1000, 0, 125, 108)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_repgl"]
+atlas = ExtResource("1_8qfha")
+region = Rect2(1125, 0, 125, 108)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_v6axo"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hnoa0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g2a5c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kqela")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i74hb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vm3ww")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n732b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vid2s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_repgl")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="NPC" type="Area2D" unique_id=205160934]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=166895891]
+sprite_frames = SubResource("SpriteFrames_v6axo")
+autoplay = "default"
+frame_progress = 0.096030585
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=582828491]
