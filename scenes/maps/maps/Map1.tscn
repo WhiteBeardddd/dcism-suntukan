@@ -8458,6 +8458,7 @@ position = Vector2(-339, 153)
 position = Vector2(26, 302)
 =======
 [node name="CharacterBody2D" parent="." unique_id=861656516 instance=ExtResource("11_x3ym4")]
+<<<<<<< HEAD
 
 [node name="CharacterBody2D2" parent="." unique_id=1385344192 instance=ExtResource("11_x3ym4")]
 position = Vector2(-67, 90)
@@ -8475,3 +8476,5 @@ position = Vector2(-178, 132)
 [node name="CharacterBody2D" parent="Node2D" unique_id=861656516 instance=ExtResource("11_x3ym4")]
 position = Vector2(15, 122)
 >>>>>>> Stashed changes
+=======
+>>>>>>> ac341ec0d266bb8dab4e9d6fd78611f006f09eb9
