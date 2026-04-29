@@ -8449,3 +8449,12 @@ tile_map_data = PackedByteArray("AAA3AAkAAAARAAEAAAA3AAoAAAARAAIAAAA4AAkAAAASAAE
 tile_set = SubResource("TileSet_xtb0b")
 
 [node name="CharacterBody2D" parent="." unique_id=861656516 instance=ExtResource("11_x3ym4")]
+
+[node name="CharacterBody2D2" parent="." unique_id=1385344192 instance=ExtResource("11_x3ym4")]
+position = Vector2(-67, 90)
+
+[node name="CharacterBody2D3" parent="." unique_id=320806110 instance=ExtResource("11_x3ym4")]
+position = Vector2(-178, 35)
+
+[node name="CharacterBody2D4" parent="." unique_id=1599624431 instance=ExtResource("11_x3ym4")]
+position = Vector2(-126, 133)
