@@ -8452,7 +8452,7 @@ tile_set = SubResource("TileSet_xtb0b")
 [node name="Area2D" parent="Node2D" unique_id=902552278 instance=ExtResource("3_efm78")]
 position = Vector2(140, 133)
 priority = 1
-lines = Array[String](["Hello there", "I am John Lorenz"])
+lines = Array[String](["Hello there", "I am John Lorenz", "Baho ko Lubot"])
 
 [node name="Area2D2" parent="Node2D" unique_id=234447260 instance=ExtResource("15_xtb0b")]
 position = Vector2(-287, 160)
