@@ -1,6 +1,8 @@
 # Knight.gd
 # Attach to your CharacterBody2D root node
 class_name Knight extends CharacterBody2D
+# --- From GameManager ---
+var hp: int
 
 # --- Tunable Stats ---
 @export var speed        := 180.0
@@ -21,9 +23,24 @@ var combo_timer    := 0.0
 @onready var attack_controller = $AttackController
 
 func _ready() -> void:
+	hp = GameManager.player_hp
 	anim.animation_finished.connect(_on_anim_finished)
+	
+	# Find the spawn point node in the current scene and move there
+	var spawn = get_tree().current_scene.get_node_or_null(GameManager.spawn_point_name)
+	if spawn:
+		global_position = spawn.global_position
+
+func _on_stats_updated() -> void:
+	hp = GameManager.player_hp
+	# update HUD here if you have one
 
 
+# Save stats back before the node exits the tree (map change)
+func _exit_tree() -> void:
+	GameManager.player_hp = hp
+	
+	
 func _on_anim_finished() -> void:
 	match anim.animation:
 		"attack1":
@@ -68,7 +85,10 @@ func apply_horizontal(dir: float) -> void:
 
 
 # --- External API ---
+# Override take_hit to also damage the global stat
 func take_hit() -> void:
+	GameManager.take_damage(10)       # deducts from GameManager
+	hp = GameManager.player_hp        # keep local copy in sync
 	$StateMachine._on_state_finished("Hit")
 
 
