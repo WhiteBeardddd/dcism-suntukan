@@ -8456,7 +8456,7 @@ position = Vector2(5050, 179)
 target_map = "res://scenes/maps/maps/Map3.tscn"
 
 [node name="SpawnPoint" type="Node2D" parent="." unique_id=578146772]
-position = Vector2(4958, 82)
+position = Vector2(-1437, 1)
 
 [connection signal="body_entered" from="Node2D/Area2D" to="Node2D/Area2D" method="_on_body_entered"]
 [connection signal="body_exited" from="Node2D/Area2D" to="Node2D/Area2D" method="_on_body_exited"]
