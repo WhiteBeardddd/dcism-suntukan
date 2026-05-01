@@ -920,3 +920,10 @@ script = ExtResource("38_1t857")
 [node name="AttackController" type="Node2D" parent="." unique_id=1144844460]
 script = ExtResource("39_d6hf5")
 hitbox_scene = ExtResource("40_uwkbq")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=751976617]
+zoom = Vector2(3.2, 3.2)
+limit_left = -10000001
+limit_top = -500
+limit_right = 5243
+limit_bottom = 211
