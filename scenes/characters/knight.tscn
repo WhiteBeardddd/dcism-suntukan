@@ -40,6 +40,8 @@
 [ext_resource type="Script" uid="uid://ds18nxkrj4pfh" path="res://scripts/StateMachine/states/Death.gd" id="38_1t857"]
 [ext_resource type="Script" uid="uid://bguqq3symyuh2" path="res://scripts/player/attack_controller.gd" id="39_d6hf5"]
 [ext_resource type="PackedScene" uid="uid://dwdbdkcfkfdwj" path="res://scenes/characters/Hitbox.tscn" id="40_uwkbq"]
+[ext_resource type="Script" uid="uid://bigep6cow87an" path="res://scripts/entities/enemy/demon/Hurtbox.gd" id="41_k2uuq"]
+[ext_resource type="PackedScene" uid="uid://daabhb8sxnutt" path="res://scenes/ui/knight_health_bar.tscn" id="42_7ieks"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_f6vmv"]
 atlas = ExtResource("1_6jeeq")
@@ -624,7 +626,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_se1yl")
 }],
-"loop": true,
+"loop": false,
 "name": &"death",
 "speed": 10.0
 }, {
@@ -632,7 +634,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_xjsyn")
 }],
-"loop": true,
+"loop": false,
 "name": &"hit",
 "speed": 5.0
 }, {
@@ -851,13 +853,16 @@ animations = [{
 radius = 6.0
 height = 36.0
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_uwkbq"]
+radius = 11.0
+height = 44.0
+
 [node name="knight" type="CharacterBody2D" unique_id=124575242 groups=["player"]]
 script = ExtResource("1_jfp34")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=192615170]
 sprite_frames = SubResource("SpriteFrames_f6vmv")
-animation = &"hit"
-frame_progress = 0.9353095
+animation = &"death"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1130195283]
 position = Vector2(-4, 21)
@@ -927,3 +932,18 @@ limit_left = -10000001
 limit_top = -500
 limit_right = 5243
 limit_bottom = 211
+
+[node name="Hurtbox" type="Area2D" parent="." unique_id=1333382424 groups=["player_hurtbox"]]
+collision_layer = 4
+collision_mask = 0
+script = ExtResource("41_k2uuq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox" unique_id=716751687]
+position = Vector2(-4, 21)
+shape = SubResource("CapsuleShape2D_uwkbq")
+
+[node name="HUD" type="CanvasLayer" parent="." unique_id=1299501640]
+
+[node name="HealthBar" parent="HUD" unique_id=1065770286 instance=ExtResource("42_7ieks")]
+
+[connection signal="ready" from="." to="." method="_on_ready"]

@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://b3w3gbfgce80q" path="res://scenes/enemy/animations/die/spritesheet (3).png" id="3_y7lej"]
 [ext_resource type="Texture2D" uid="uid://du88refgmq071" path="res://assets/demon_animation/animations/flying/spritesheet (2).png" id="4_dw28v"]
 [ext_resource type="Script" uid="uid://bigep6cow87an" path="res://scripts/entities/enemy/demon/Hurtbox.gd" id="5_rk35g"]
-[ext_resource type="PackedScene" uid="uid://bywkylskegxgj" path="res://scenes/ui/health_bar.tscn" id="7_e0nu2"]
+[ext_resource type="PackedScene" uid="uid://dwdbdkcfkfdwj" path="res://scenes/characters/Hitbox.tscn" id="7_e0nu2"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mjg7i"]
 atlas = ExtResource("3_3ae06")
@@ -290,8 +290,13 @@ height = 34.0
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rk35g"]
 height = 44.0
 
-[node name="Demon" type="CharacterBody2D" unique_id=861656516 groups=["enemy"]]
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=861656516]
 script = ExtResource("1_1xnnm")
+attack_range = null
+move_speed = null
+attack_cooldown = null
+max_hp = null
+knockback_friction = null
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2058371199]
 sprite_frames = SubResource("SpriteFrames_mvkia")
@@ -301,17 +306,21 @@ autoplay = "idle"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2073435810]
 shape = SubResource("CapsuleShape2D_y7lej")
 
-[node name="Hurtbox" type="Area2D" parent="." unique_id=1936516563 groups=["enemy_hurtbox"]]
-collision_layer = 8
-collision_mask = 0
+[node name="Hurtbox" type="Area2D" parent="." unique_id=1936516563]
+collision_layer = 16
+collision_mask = 8
 script = ExtResource("5_rk35g")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox" unique_id=1516621358]
 shape = SubResource("CapsuleShape2D_rk35g")
 
-[node name="HealthBar" parent="." unique_id=1065770286 instance=ExtResource("7_e0nu2")]
-self_modulate = Color(0.9999998, 0.1215161, 0.112435006, 1)
+[node name="HealthBar" type="ProgressBar" parent="." unique_id=1161282925]
+modulate = Color(1, 0.21960784, 0.08627451, 1)
 offset_left = -9.0
-offset_top = -30.0
-offset_right = 9.0
-offset_bottom = -27.0
+offset_top = -32.0
+offset_right = 10.0
+offset_bottom = -28.0
+value = 100.0
+show_percentage = false
+
+[node name="Hitbox" parent="." unique_id=1260896598 instance=ExtResource("7_e0nu2")]

@@ -15,9 +15,10 @@ const ATTACK_DATA := { # [dmg, x, y, width, height, timeframe, knockback]
 func spawn_hitbox(attack_name: String) -> void:
 	if not ATTACK_DATA.has(attack_name):
 		return
-	var cfg    = ATTACK_DATA[attack_name]
+	var cfg = ATTACK_DATA[attack_name]
 	var hitbox = hitbox_scene.instantiate()
-	hitbox.damage   = cfg[0]
+	hitbox.source = "player"  # ← ADD THIS
+	hitbox.damage = cfg[0]
 	hitbox.lifetime = cfg[5]
 	hitbox.knockback_force = cfg[6]
 	var sign_x = 1.0 if facing_right else -1.0

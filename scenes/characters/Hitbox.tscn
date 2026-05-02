@@ -6,7 +6,7 @@
 
 [node name="Hitbox" type="Area2D" unique_id=1260896598]
 collision_layer = 8
-collision_mask = 16
+collision_mask = 12
 script = ExtResource("1_0ux8l")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=850554000]
